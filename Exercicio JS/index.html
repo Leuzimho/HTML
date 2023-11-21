@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(255, 255, 255);
+            width:60%;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        button{
+            margin: 5px;
+        }
+
+
+
+
+        .inline{
+            font-weight: bold;
+            margin: auto;
+            
+        }
+
+        .limpar{
+            color: white;
+            float: right;
+            background-color: blue;
+            padding: 10px;
+            border-color: blue;
+        }
+
+        .cadastrar{
+            color: white;
+            float: right;
+            background-color: orange;
+            padding: 10px;
+            border-color: orange;
+        }
+
+        .inputBox{
+            display: inline-block;
+            width: 50%;
+            margin: 5px;
+            border-radius: 4px;
+            background-color: aliceblue;
+            border-width: 1px;
+            height: 30px;
+            border-color:bisque;
+        }
+
+        label{
+            margin-left: 40px;
+            display: inline-block;
+            width: 40%;
+        }
+
+        body{
+            background-color: rgb(230, 190, 212);
+        }
+
+        form{
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section>
+            <h1>Cadastro de usuário</h1>
+            <p>Preencha o formulário abaixo para se cadastrar</p>
+
+            <form>
+
+                <div class="inline">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id = "nome" class="inputBox">
+                </div>
+
+                <div class="inline">
+                    <label for="email">E-mail: </label>
+                    <input type="text" id = "email" class="inputBox">
+                </div>
+                <div class="inline">
+                    <label for="senha">Senha: </label>
+                    <input type="text" id = "senha" class="inputBox">
+                </div>
+                <div class="inline">
+                    <label for="cSenha">Confirmar senha: </label>
+                    <input type="text" id = "cSenha" class="inputBox">
+                </div>
+
+                <div class="inline">
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" id = "cidade" class="inputBox">
+                </div>
+
+                <div class="inline">
+                    <label for="telefone">Telefone: </label>
+                    <input type="text" id = "telefone" class="inputBox">
+                </div>
+                
+                <button type="submit" class="limpar" onclick="validarCadastro()">Cadastrar</button>
+                <button type="reset" class="cadastrar">Limpar</button>
+            </form>
+
+            <script>
+                function validarCadastro() {
+                    var nome = document.getElementById('nome').value;
+                    var email = document.getElementById('email').value;
+                    var senha = document.getElementById('senha').value;
+                    var cidade = document.getElementById('cidade').value;
+                    var telefone = document.getElementById('telefone').value;
+            
+                    // Validar os campos (pode adicionar mais validações conforme necessário)
+                    if (nome === '' || email === '' || senha === '' || cidade === '' || telefone === '') {
+                        alert('Todos os campos são obrigatórios');
+                        return;
+                    }
+            
+                    // Enviar dados para o servidor ou realizar outras ações necessárias
+                    alert('Cadastro realizado com sucesso!');
+                }
+            </script>
+
+        </section>
+    </main>
+    
+    </body>
+</html>

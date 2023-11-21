@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form id="form">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+                <br><br>
+
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email">
+                <br><br>
+
+                <button type="button" onclick="salvarDados()">Salvar</button>
+            </form>
+
+            
+        </section>
+        <a href="/tabela.html">Ver Tabela</a>
+    </main>
+    
+</body>
+
+<script>
+    const form = document.getElementById('form');
+    const nome = document.getElementById('nome');
+    const email = document.getElementById('email');
+
+    var dados = JSON.parse(localStorage.getItem('dados')) || [];
+
+    function salvarDados()
+    {
+        let novoNome = nome.value;
+        let novoEmail = email.value;
+        dados.push({nome: novoNome, email: novoEmail});
+        localStorage.setItem('dados', JSON.stringify(dados));
+        window.location.href = "./index.html";
+    }
+</script>
+</html>

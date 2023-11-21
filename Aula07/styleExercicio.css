@@ -1,0 +1,61 @@
+.container{
+    background-color: rgb(247, 241, 241);
+    width:60%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+button{
+    margin: 5px;
+}
+
+body{
+    background-color: antique white;
+}
+
+
+.inline{
+    font-weight: bold;
+    margin: auto;
+    
+}
+
+.limpar{
+    color: white;
+    float: right;
+    background-color: blue;
+    padding: 10px;
+    border-color: blue;
+}
+
+.cadastrar{
+    color: white;
+    float: right;
+    background-color: orange;
+    padding: 10px;
+    border-color: orange;
+}
+
+.inputBox{
+    display: inline-block;
+    width: 50%;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: aliceblue;
+    border-width: 1px;
+    height: 30px;
+    border-color:bisque;
+}
+
+label{
+    margin-left: 40px;
+    display: inline-block;
+    width: 40%;
+}
+
+form{
+    display: inline-block;
+    width: 100%;
+}

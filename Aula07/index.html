@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Display</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <section>
+            <h1>Aula Display</h1>
+
+            <divanimada class="block">
+                <h2>Conteúdo display block</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat facilis, iure libero nisi sapiente laborum. Necessitatibus itaque, facilis voluptas eaque harum rem, eius consequatur veritatis error, voluptatem eum sapiente eligendi.</p>
+            </div>
+            <span class="block azul">Display Block</span> 
+            <div>
+                <h2>Display Inline</h2>
+                <div class="inline">Display inline</div>
+                <div class="inline">Display inline</div>
+                <div class="inline">Display inline</div>
+                <div class="inline">Display inline</div>
+            </div>
+            
+            <div id="mostrar" class = "none">
+                <h2>Display none</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius debitis consectetur dolores libero corporis ea, exercitationem consequatur ipsa fugit, sit provident? Quis nam sequi voluptas vero, commodi officiis sunt!</p>
+            </div>
+            <form>
+                <label for="mostrar">Mostrar: </label>
+                <input type="radio" name="exibir" id = "mostrar" onclick="document.getElementById('mostrar').classList,remove('none')">
+                <label for="Nmostrar">Não mostrar: </label>
+                <input type="radio" name="exibir" id = "Nmostrar" onclick="document.getElementById('mostrar').classList.add('none')">
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

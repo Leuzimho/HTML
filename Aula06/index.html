@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0px;
+        }
+        li{
+            float: left;
+            padding: 10px;
+
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        td, th{
+            text-align: center;
+            padding:  10px;
+            border: 1px solid black;
+        }
+        th{
+            color: aliceblue;
+            background-color: aqua;
+        }
+        .coluna-destacada {
+            background-color: #7ae67f; /* Cor de fundo desejada */
+        }
+        .sumir-linha {
+            border: none;
+            
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+    <title>Exercício</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+<header>
+    <main>
+        <section>
+            <br>
+            <br>
+
+            <h1><b>Exercicio</b></h1>
+
+            <hr>
+            <form>
+                <label for="texto"><b>Nome: </b></label>
+                <input type="text" name="texto" placeholder="Digite seu nome"><br><br>
+                <label for="cpf"><b>CPF: </b> </label>
+                <input type="text" name = "cpf" placeholder="Digite seu CPF"> <br><br>
+                <label for="endereço"><b>Endereço: </b></label>
+                <input type="text" name = "endereço" placeholder="Digite seu Endereço"><br><br>
+                <label for="telefone"><b>Telefone: </b></label>
+                <input type="text" name = "telefone" placeholder="Digite seu Telefone"><br><br>
+                <label for="email"><b>Email: </b></label>
+                <input type="text" name = "email" placeholder="Digite seu E-mail"><br><br>
+                <input type="submit" value = "Enviar"> &nbsp; | &nbsp;
+                <input type="reset" value = "Limpar">
+                <hr>
+            </form>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>José</td>
+                    <td class="coluna-destacada">123456789</td>
+                    <td>Rua das Flores</td>
+                    <td class="coluna-destacada">41 999-9999</td>
+                    <td>email@dominio.com.br</td>
+                </tr>
+                <tr>
+                   
+                    <td>José</td>
+                    <td class="coluna-destacada">123456789</td>
+                    <td>Rua das Flores</td>
+                    <td class="coluna-destacada">41 999-9999</td>
+                    <td>email@dominio.com.br</td>
+                </tr>
+                <tr>
+                    
+                    <td>José</td>
+                    <td class="coluna-destacada">123456789</td>
+                    <td>Rua das Flores</td>
+                    <td class="coluna-destacada">41 999-9999</td>
+                    <td>email@dominio.com.br</td>
+                </tr>
+                <tr>
+
+                    <td>José</td>
+                    <td class="coluna-destacada">123456789</td>
+                    <td>Rua das Flores</td>
+                    <td class="coluna-destacada">41 999-9999</td>
+                    <td>email@dominio.com.br</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td class="coluna-destacada">123456789</td>
+                    <td>Rua das Flores</td>
+                    <td class="coluna-destacada">41 999-9999</td>
+                    <td>email@dominio.com.br</td>
+                </tr>
+                <tr>
+
+                    <td>José</td>
+                    <td class="coluna-destacada">123456789</td>
+                    <td>Rua das Flores</td>
+                    <td class="coluna-destacada">41 999-9999</td>
+                    <td>email@dominio.com.br</td>
+                </tr>
+                <tr>
+
+                    <td>José</td>
+                    <td class="coluna-destacada">123456789</td>
+                    <td>Rua das Flores</td>
+                    <td class="coluna-destacada">41 999-9999</td>
+                    <td>email@dominio.com.br</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="sumir-linha">
+                        <input type="button" value = "Anterior">
+                        <select name="selecao">
+                            <option value="p1">1</option>
+                            <option value="p2">2</option>
+                            <option value="p3">3</option>
+                        </select>
+                        <input type="button" value = "Próximo">
+                    </td>
+                </tr>
+            </tfoot>
+            </table>
+
+
+        </section>
+    </main>
+</header>
+
+<footer>
+    <hr>
+    <p><sup>&copy; </sup>2023 - Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
